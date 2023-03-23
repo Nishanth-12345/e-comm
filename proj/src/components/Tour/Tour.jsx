@@ -6,6 +6,7 @@ const Tour = () => {
     <div className='tour1' >
         <Link to = '/tour'>
          <h1 className='tour'> EXPLORE TOURS </h1>  
+         <h1 >CLICK HERE</h1>
         </Link>
     </div>
   )
