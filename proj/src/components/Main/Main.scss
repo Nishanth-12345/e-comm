@@ -1,0 +1,140 @@
+.main{
+    width: 100%;
+
+    .secTitle{
+        .title{
+            position: relative;
+            width: max-content;
+            color: wheat;
+            margin: 1rem 0;
+            z-index: 2;
+
+            &::after{
+                position: absolute;
+                content: '';
+                background: orange;
+                height: 5px;
+                width: 120px;
+                right: 0;
+                bottom: 5px;
+                z-index: -1;
+            }
+        }
+    }
+
+    .setContent{
+        display: flex;
+        justify-content: center;
+        gap:1.5rem;
+        
+        .singleDestination{
+            height:400px;
+            width: 400px;
+            display: grid;
+            grid-template-columns: minmax(3, 1fr);
+            row-gap: 10px;
+        
+            border-radius: 10px;
+            align-items: center;
+            background: white;
+            box-shadow: 0 2px 4px wheat;
+            overflow: hidden;
+            &:hover{
+                background: wheat ;
+                box-shadow: 1 4px 4px wheat;
+                transition: .3s ease;
+            }
+            .imageDiv{
+                
+                width: 100%;
+                overflow: hidden;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 2s ease;
+                }
+
+                &:hover{
+                    img{
+                      transition: scale(1.1);  
+                    }
+                }
+            }
+
+            .cardInfo{
+                padding: 1rem;
+
+                .destTitle{
+                    color: black;
+                    font-size: 1.25rem;
+                }
+                .continent{
+                    gap:.5rem;
+
+                    .icon{
+                        color: wheat;
+                        font-size: 18px;
+                    }
+                    .name{
+                        color: wheat;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                }
+                .fees{
+                    width: 100%;
+                    justify-content: space-between;
+                    padding: 1rem;
+                    margin:1rem 0;
+                    border-top: 1.5px solid gray;
+                    border-bottom:  1.5px solid gray;
+
+                    .grade{
+                        color: wheat;
+                        max-width: 100px;
+                        line-height: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        small{
+                            text-align: center;
+                            background: orange;
+                            border-radius: 1rem;
+                            color: whitesmoke;
+                            padding: 3px 10px;
+                            font-size: 10px;
+                            margin-left: 10px;
+                        }
+                    }
+                    .price{
+                        font-size: 2rem; 
+                        color: black;
+                    }
+                }
+                .desc{
+                    font-size: 13.5px;
+                    color: wheat;
+                    font-weight: 500;
+                }
+
+                .btn{
+                    margin-top: 1rem;
+                    color: whitesmoke;
+                    font-weight: 600;
+                    justify-content: space-between;
+                    gap:.5rem;
+
+                    .icon{
+                        align-self: center;
+                        font-size: 18px;
+                    }
+                }
+
+                
+            }
+        }
+    }
+}
