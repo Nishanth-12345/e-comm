@@ -5,8 +5,11 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
 import Footer from './components/Footer/footer';
-import items from './components/data.js';
+//import items from './components/data.js';
 import Singletour from './components/Singletour/Singletour';
+import Post from './components/Post/Post.js';
+import Update from './components/Update/Update.js';
+
 
 
 function App() {
@@ -20,8 +23,10 @@ function App() {
         <Routes>
 
            <Route path='/' element={<Home />} />
-           <Route path='/tour' element={<Main item={items}/>} />
+           <Route path='/tour' element={<Main/>} />
            <Route path='/tour/tour/:id' element={<Singletour />} />
+           <Route path='/post' element={<Post />} />
+           <Route path='/editpost' element={<Update />} />
         </Routes>
      
         <Footer />

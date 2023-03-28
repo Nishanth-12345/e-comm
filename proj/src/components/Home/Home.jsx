@@ -11,7 +11,7 @@ import { BsListTask } from "react-icons/bs";
 import { TbApps } from "react-icons/tb";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import Tour from '../Tour/Tour';
 
 
@@ -29,10 +29,10 @@ const Home = () => {
        <div className="homeContent container">
          <div className="textDiv">
           <span data-aos="fade-up" className='smallText'>
-             our packeges
+             our Tours
           </span>
           <h1 data-aos="fade-up" className='homeTitle'>
-            search your holiday
+            search your Tours
           </h1>
          </div>
 

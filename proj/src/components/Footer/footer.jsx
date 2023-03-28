@@ -1,5 +1,5 @@
 import React  from 'react';
-import { useEffect } from 'react';
+//import { useEffect } from 'react';
 import './footer.css';
 import './footer.scss';
 import video2 from '../../assets/sea-138588.mp4';
@@ -30,7 +30,7 @@ const footer = () => {
         <div className='contactDiv flex'>
            <div data-aos="fade-up" className='text'>
              <small>Keep in Touch</small>
-             <h2>Travel with us</h2>
+             <h2>LET TRAVEL EXPLORES</h2>
            </div>
            <div className='inputDiv flex'>
              <input data-aos="fade-up" type='text' placeholder='Enter Email Address' />
@@ -45,7 +45,7 @@ const footer = () => {
               <div className="logoDiv">
                  <a href='#' className='logo flex'>
                     <MdOutlineTravelExplore 
-                     className='icon'/> Travel.
+                     className='icon'/> TOURS.
                  </a>  
               </div>
 
@@ -64,7 +64,7 @@ const footer = () => {
            <div className='footerLinks grid'>
                <div data-aos="fade-up" data-aos-duration="5000" className='linkGroup'>
                  <span className='groupTitle'>
-                   our agency
+                   our Timespots
                  </span>
 
                  <li className='footerList flex'>
@@ -118,7 +118,7 @@ const footer = () => {
 
                <div data-aos="fade-up" data-aos-duration="3000" className='linkGroup'>
                  <span className='groupTitle'>
-                   our agency
+                   our goals
                  </span>
 
                  <li className='footerList flex'>
@@ -145,7 +145,7 @@ const footer = () => {
            </div>
 
            <div className='footerDiv flex'>
-             <small>BEST TRAVEL WEBDITE</small>
+             <small>FOREVER SITE</small>
              <small>COPYRIGHT @2023</small>
            </div>
         </div>
