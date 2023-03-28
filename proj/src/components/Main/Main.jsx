@@ -47,6 +47,7 @@ const Main = () => {
   const setToLocalStorage = (id, e_descTitle,e_description,
     e_fees,e_grade,e_img,e_location) => {
       localStorage.setItem("id",id);
+      localStorage.setItem("getid",id);
       localStorage.setItem("e_description",e_description);
       localStorage.setItem("e_descTitle",e_descTitle);
       localStorage.setItem("e_grade",e_grade);
@@ -124,7 +125,7 @@ const Main = () => {
                           e_grade,
                           e_img,
                           e_location
-                        )}>
+                           )}>
                       DETAILS <HiOutlineClipboardCheck className='icon' />
                     </button>
 
