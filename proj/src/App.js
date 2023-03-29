@@ -12,6 +12,7 @@ import Update from './components/Update/Update.js';
 
 
 
+
 function App() {
   
   return (
@@ -28,7 +29,7 @@ function App() {
            <Route path='/post' element={<Post />} />
            <Route path='/editpost' element={<Update />} />
         </Routes>
-     
+        
         <Footer />
 
     </Router>

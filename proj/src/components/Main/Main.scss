@@ -81,11 +81,11 @@
                     gap:.5rem;
 
                     .icon{
-                        color: wheat;
+                        color: rgb(81, 17, 81);
                         font-size: 18px;
                     }
                     .name{
-                        color: wheat;
+                        color: orange;
                         font-weight: 400;
                         font-size: 14px;
                     }
@@ -99,7 +99,7 @@
                     border-bottom:  1.5px solid gray;
 
                     .grade{
-                        color: wheat;
+                        color: orange;
                         max-width: 100px;
                         line-height: 20px;
                         display: flex;
@@ -108,7 +108,7 @@
 
                         small{
                             text-align: center;
-                            background: orange;
+                            background: rgb(83, 10, 83);
                             border-radius: 1rem;
                             color: whitesmoke;
                             padding: 3px 10px;
@@ -123,7 +123,7 @@
                 }
                 .desc{
                     font-size: 13.5px;
-                    color: wheat;
+                    color: orange;
                     font-weight: 500;
                 }
 

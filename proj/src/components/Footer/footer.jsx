@@ -1,5 +1,6 @@
-import React  from 'react';
+import React ,{useRef} from 'react';
 //import { useEffect } from 'react';
+import { useState } from 'react';
 import './footer.css';
 import './footer.scss';
 import video2 from '../../assets/sea-138588.mp4';
@@ -13,11 +14,11 @@ import {FiChevronRight} from 'react-icons/fi';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
+import emailjs from '@emailjs/browser';
+//import { useNavigate } from 'react-router-dom';
 
-
-const footer = () => {
-  
-  
+function footer ()  {
+ 
   
 
   return (
@@ -33,10 +34,13 @@ const footer = () => {
              <h2>LET TRAVEL EXPLORES</h2>
            </div>
            <div className='inputDiv flex'>
-             <input data-aos="fade-up" type='text' placeholder='Enter Email Address' />
-             <button data-aos="fade-up" className='btn flex' type='submit'>
-               SEND <FiSend className='icon'/>
-             </button>
+      
+              <input data-aos="fade-up" type='text'  placeholder='Enter Email Address'  />
+               <button data-aos="fade-up" className='btn flex' type='submit' >
+               SEND <FiSend className='icon'/> 
+               </button>
+            
+             
            </div>
         </div>
 
@@ -154,4 +158,4 @@ const footer = () => {
   )
 }
 
-export default footer
+export default footer;
